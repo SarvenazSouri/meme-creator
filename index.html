@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <h1>Meme Creator ( ͡° ͜ʖ ͡°)</h1>
+
+    <div id="container">
+      <div class="left-section-column">
+        <fieldset id="settings-fieldset">
+          <legend>Settings</legend>
+
+          <h3>Image</h3>
+
+          <div class="form-row">
+            <label>Template</label>
+            <select id="templateSelector">
+              <option value="./images/success-baby.jpg">Success baby</option>
+              <option value="./images/think.jpg">Just think about</option>
+              <option value="./images/aliens.jpg">Aliens</option>
+              <option value="./images/picard.jpg">Picard</option>
+              <option value="./images/buzz-and-woody.jpg">Buzz and Woody</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label>Use white letterbox</label>
+            <input id="whiteLetterboxCheckbox" type="checkbox" />
+          </div>
+
+          <h3>Labels</h3>
+
+          <div class="form-row">
+            <input type="radio" name="label-choice" value="top" /> Top
+            <input
+              class="label-choice-radio"
+              type="radio"
+              name="label-choice"
+              value="middle"
+            />
+            Middle
+            <input
+              class="label-choice-radio"
+              type="radio"
+              name="label-choice"
+              value="bottom"
+            />
+            Bottom
+          </div>
+
+          <div class="form-row">
+            <label>Text</label><br />
+            <textarea id="label-text"></textarea>
+          </div>
+
+          <div class="form-row">
+            <label>Font</label>
+            <select id="fontSelector">
+              <option value="arial, sans-serif">Arial</option>
+              <option value="cursive, sans-serif">Cursive</option>
+              <option value="impact, sans-serif">Impact</option>
+              <option value="monaco, monospace">Monaco</option>
+              <option value="times, serif">Times</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label>Font size</label>
+            <input
+              id="fontSizeSelector"
+              type="number"
+              min="8"
+              max="96"
+              value="16"
+            />
+
+            <label>Color</label>
+            <input id="colorSelector" type="color" value="#FFFFFF" />
+          </div>
+        </fieldset>
+      </div>
+
+      <div class="right-section-column">
+        <fieldset id="preview-fieldset">
+          <legend>Preview</legend>
+
+          <div id="preview-image-container">
+            <img id="preview-image" src="./images/success-baby.jpg" />
+
+            <p
+              id="meme-text-top"
+              class="meme-text"
+              style="
+                font-size: 16px;
+                color: #ffffff;
+                font-family: arial, sans-serif;
+              "
+            >
+              Write
+            </p>
+
+            <p
+              id="meme-text-middle"
+              class="meme-text"
+              style="
+                font-size: 16px;
+                color: #ffffff;
+                font-family: arial, sans-serif;
+              "
+            >
+              Text
+            </p>
+
+            <p
+              id="meme-text-bottom"
+              class="meme-text"
+              style="
+                font-size: 16px;
+                color: #ffffff;
+                font-family: arial, sans-serif;
+              "
+            >
+              Here
+            </p>
+          </div>
+        </fieldset>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </body>
+</html>

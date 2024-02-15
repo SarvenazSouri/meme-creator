@@ -1,0 +1,100 @@
+.clearfix {
+  clear: both;
+}
+
+#container {
+  height: 400px;
+}
+
+.left-section-column {
+  width: 275px;	
+  height: 100%;
+  float: left;
+}
+
+.right-section-column {
+  min-width: 400px;	
+  max-width: calc(100% - 275px);
+  width: 400px;
+  min-height: 400px;
+  height: 100%;
+  float: left;
+  resize: both;
+  overflow: hidden;
+}
+
+/*
+* Settings
+*/
+
+#settings-fieldset {
+  height: 100%;
+  margin-right: 8px;
+  box-sizing: border-box;
+}
+
+.form-row {
+  margin: 16px 0px;
+}
+
+.label-choice-radio {
+  margin-left: 16px;
+}
+
+#label-text {
+  width:  215px;
+  height: 50px;
+  resize: none;
+}
+
+/*
+* Preview
+*/
+
+#preview-fieldset {
+  height: 100%;
+  margin-left: 8px;
+  box-sizing: border-box;
+}
+
+#preview-image-container {
+  height: calc(100% - 19px);/* -19 fieldset */
+  text-align: center;
+  position: relative;
+  background-color: black;
+}
+
+#preview-image {
+  height: 100%;  
+  width: 100%;  
+  object-fit: contain;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.meme-text {
+  width: 100%;
+  position: absolute;
+  margin: 8px auto;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+#meme-text-top {
+  top: 0px;
+}
+
+#meme-text-middle {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#meme-text-bottom {
+  bottom: 0px;
+}
+
+#save-image-button-container {
+  text-align: center;
+  padding-top: 16px;
+}
